@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">Curadoria Brasileira</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="artistas.html">Artistas</a></li>
+                    <li><a href="obras.html">Obras</a></li>
+                    <li><a href="movimentos.html">Movimentos</a></li>
+                    <li><a href="exposicoes.html">Exposições</a></li>
+                    <li><a href="repertorio.html">Repertório</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Formulário de Login -->
+    <section class="login">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Digite seu email" required class="texto__email__login">
+        <input type="password" id="loginSenha" placeholder="Digite sua senha" required class="texto__senha__login">
+        <button id="btnLogin" class="botao__login">Entrar</button>
+        <p>Não tem conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+    </section>
+
+    <script>
+        document.getElementById("btnLogin").addEventListener("click", function() {
+            const email = document.getElementById("loginEmail").value;
+            const senha = document.getElementById("loginSenha").value;
+
+            const emailSalvo = localStorage.getItem("emailCadastrado");
+            const senhaSalva = localStorage.getItem("senhaCadastrada");
+
+            if(email === "" || senha === ""){
+                alert("Preencha todos os campos!");
+                return;
+            }
+
+            if(email === emailSalvo && senha === senhaSalva){
+                alert("Login realizado com sucesso!");
+                window.location.href = "index.html";
+            } else {
+                alert("Email ou senha incorretos!");
+            }
+        });
+    </script>
+</body>
+</html>
