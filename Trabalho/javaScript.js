@@ -240,7 +240,7 @@ function verificarEmail() {
 
 function excluirConta() {
 
-    let confirmar = confirm(prompt("Você tem certeza disso?"))
+    let confirmar = confirm("Você tem certeza disso?")
 
     if (confirmar) {
 
@@ -428,4 +428,5 @@ function elementosInicar() {
         nomeBemvindo();
     }
 }
+
 
