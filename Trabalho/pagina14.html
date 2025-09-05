@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Ajustes da Conta</title>
+  <link rel="stylesheet" href="css/style14.css">
+  <script src="javaScript.js" defer></script>
+</head>
+
+<body onload="elementosInicar()">
+
+  <header>
+
+    <div class="cabecalho__lista_dropdown">
+
+      <p class="mais">☰</p>
+
+
+      <ul class="lista__itens_conteudos">
+
+        <li class="lista__itens__cabecalho"><a href="pagina2.html">A Historia do Audiovisual</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina3.html">Trabalhar no Audiovisual brasileiro</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina4.html">A importância dos curtas brasileiros</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina5.html">O impacto de <cite>Ainda Estou Aqui</cite></a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina6.html">Grandes obras do audiovisual brasileiro</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina9.html">Diretores Essenciais</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina7.html">Sobre o projeto</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina8.html">Contato</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina10.html">Termos de Serviço</a></li>
+
+      </ul>
+
+    </div>
+
+    <p id="pagina__inicial"><a href="paginainicial.html">Página Inicial</a></p>
+
+    <p class="pagina__loginclass" id="pagina__login"></p>
+
+  </header>
+
+  <section class="ajustes__pagina">
+
+  <h1 class="ajustes__pagina__texto__introducao">Ajustes:</h1>
+
+  <h3>Mudança de email:</h3>
+
+  <div class="informacoes">
+
+  <p>E-mail antigo:</p>
+
+  </div>
+  <input type="email" id="velho__email" placeholder="Digite seu velho e-mail aqui" class="barras__de__input">
+
+  <div class="informacoes">
+  <p>E-mail novo:</p>
+  
+  </div>
+  <input type="email" id="novo__email" placeholder="Digite seu novo e-mail aqui" class="barras__de__input">
+
+  <input type="submit" id="mudar__email" onclick="mudarEmail()" value="Mudar" class="botao__pagina__usuario">
+
+  <div class="informacoes">
+   <h3>Mudança de senha:</h3>
+
+  <p>Senha velha:</p>
+
+  </div>
+  <input type="password" id="velha__senha" placeholder="Digite seu velho e-mail aqui" class="barras__de__input">
+
+  <div class="informacoes">
+  <p>Senha nova:</p>
+  </div>
+  
+  <input type="password" id="nova__senha" placeholder="Digite seu novo e-mail aqui" class="barras__de__input">
+
+  <input type="submit" id="mudar__senha" onclick="mudarSenha()" value="Mudar" class="botao__pagina__usuario">
+
+  <div class="informacoes">
+  <h3>Excluir conta:</h3>
+
+  <p>Ao clicar nesse botão, sua conta será excluída. Seus dados permanecerão em nosso sistema por 45 dias antes de serem apagados permanentemente.</p>
+
+  </div>
+
+  <button type="button" id="botao__excluir" onclick="excluirConta()" class="botao__pagina__usuario">Excluir</button>
+
+
+
+  <section class="opcoes__externas">
+  <p><a href="pagina13.html">Voltar</a></p>
+
+  <button type="button" id="sair" onclick="sairConta()" class="botao__pagina__usuario">Sair</button>
+
+  </section>
+  </section>
+
+  <footer class="rodepe">
+
+    <ul class="listas__rodape">
+
+      <li class="lista_rodape__itens_especifico"><a href="pagina7.html">Sobre o projeto</a></li>
+
+      <li class="lista_rodape__itens_especifico"><a href="pagina8.html">Contato</a></li>
+
+      <li class="lista_rodape__itens_especifico"><a href="paginainicial.html">Início</a></li>
+
+      <li class="lista_rodape__itens_especifico"><a href="pagina10.html">Termos de Serviço</a></li>
+
+
+    </ul>
+
+
+    <div class="rodape__suplemento">
+
+      <p>© 2025 Todos os direitos reservados, IFCE*</p>
+
+      <p>Esta página é disponibilizada nos termos da licença <a href="#">Creative Commons Atribuição-Compartilha
+          Igual</a></p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

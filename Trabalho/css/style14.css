@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Header*/
+header {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 28px 28px;
+    height: 20px;
+    text-align: left;
+}
+
+.lista__itens_conteudos {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.lista__itens__cabecalho, .mais {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mais {
+    height: 25px;
+    width: 25px;
+}
+
+.lista__itens__cabecalho:hover {
+    background-color: grey;
+}
+
+li.cabecalho__lista_dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista__itens_conteudos {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    width: 342px;
+}
+
+.lista__itens_conteudos a {
+    text-decoration: none;
+    height: 20px;
+    width: 340px;
+    display: block;
+    text-align: left;
+    border: 2px solid black;
+    color: black;
+   padding-bottom: 1.2px;
+}
+
+.cabecalho__lista_dropdown:hover .lista__itens_conteudos {
+    display: block;
+}
+
+.cabecalho__lista_dropdown:hover .mais {
+    background-color: grey;
+    border: 2px solid rgb(168, 165, 165);
+    border-radius: 4px;
+}
+
+#pagina__inicial a{
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+#pagina__inicial a:hover{
+    text-decoration-line: underline;
+    color: grey;
+}
+
+.pagina__loginclass {
+  position: absolute;
+  top: 21.8px;      
+  right: 1rem;  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  text-decoration: none;
+  color: #fff;
+  z-index: 50;
+}
+
+.pagina__loginclass:hover{
+    text-decoration-line: underline;
+    color: grey;
+}
+
+
+.ajustes__pagina {
+  max-width: 920px;
+  margin: 32px auto;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(20,20,30,0.06);
+  
+  color: #ffffff;
+}
+
+/* Títulos */
+.ajustes__pagina h2,
+.ajustes__pagina h3,
+.ajustes__pagina h4 {
+  margin: 8px 0;
+  line-height: 1.2;
+  color: #e2e2e2;
+}
+
+.ajustes__pagina__texto__introducao {
+  
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left; 
+}
+
+/* Parágrafos */
+.ajustes__pagina p {
+  color: #e2e2e2;
+  line-height: 1.5;
+  margin: 10px 0 14px;
+  font-size: 0.98rem;
+}
+
+/* Inputs de texto */
+.barras__de__input {
+  width: 80%;
+  padding: 10px 12px;
+  border: 1px solid #424243;
+  background-color: #2c2c2c;
+  color: #e2e2e2;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  outline: none;
+  
+}
+.barras__de__input:focus {
+  outline: none;
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  box-shadow: 0 6px 8px rgba(132, 134, 137, 0.12);
+}
+
+.barras__de__input::placeholder {
+  color: rgb(226, 226, 226);
+}
+
+.informacoes {
+  gap: 1rem;
+}
+
+
+.barras__de__input,
+.botao__pagina__usuario {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 0.98rem;
+  transition: transform .12s ease, box-shadow .12s ease;
+  margin-bottom: 18px;
+  
+  
+}
+
+.botao__pagina__usuario {
+  background-color: #000000;
+  color: rgb(226, 226, 226);
+  margin-right: 8px;
+  margin-bottom: 18px;
+}
+
+.botao__pagina__usuario:hover {
+  background-color: black;
+  color: grey;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(41, 42, 42, 0.168);
+}
+
+
+.ajustes__pagina label {
+  color: rgb(226, 226, 226);
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-bottom: 18px;
+}
+
+.ajustes__pagina__texto__introducao {
+  padding-bottom: 0.8rem;
+}
+
+.opcoes__externas {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+
+.ajustes__pagina a {
+  color: #e2e2e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+.ajustes__pagina a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+
+/* footer e rodapé*/
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+.listas__rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 1rem 0;
+}
+.lista_rodape__itens_especifico {
+  list-style: none;
+  font-size: 1rem;
+}
+.lista_rodape__itens_especifico a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s;
+}
+.lista_rodape__itens_especifico a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+.lista_rodape__itens_especifico:not(:last-child)::after {
+  content: "•";
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+.rodape__pontos {
+  font-size: 0.75rem;
+  color: #fff;
+  margin-top: 0.25rem;
+}
+.rodape__suplemento {
+  color: #fff;
+  padding: 0.5rem 0;
+  font-size: small;
+}
+.rodape__suplemento a {
+  text-decoration: underline;
+  color: #fff;
+}
+.rodape__suplemento a:hover {
+  color: grey;
+}
+
+@media (max-width: 48rem /*768px*/) {
+    
+.ajustes__pagina {
+  height: auto;
+  max-width: 600px;
+  
+  
+}
+
+
+footer {
+    
+    position: relative;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+    
+   
+}
+
+    
+
+}
+
+
+@media (max-width: 30rem /*375px*/) {
+
+    .lista__itens_conteudos {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    width: 252px;
+}
+
+    .lista__itens_conteudos a {
+    text-decoration: none;
+    height: 38px;
+    width: 250px;
+    display: block;
+    text-align: left;
+    border: 2px solid black;
+    color: black;
+    justify-content: center;
+}
+
+    
+.ajustes__pagina {
+  height: auto;
+  max-width: 350px;
+
+  
+}
+
+footer {
+    
+    position: relative;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+    
+   
+}
+
+.rodape__suplemento{
+    max-width: auto;
+    text-align: center;
+}
+    
+}
