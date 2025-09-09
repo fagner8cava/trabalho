@@ -110,6 +110,9 @@ li.cabecalho__lista_dropdown {
     color: grey;
 }
 
+.area__login{
+    padding-top: 3rem;
+}
 .forma__login {
   display: flex;
   flex-direction: column;
@@ -369,4 +372,5 @@ footer {
     text-align: center;
 }
     
+
 }
