@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página da Conta</title>
+  <link rel="stylesheet" href="css/style13.css">
+  <script src="javaScript.js" defer></script>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+
+<body onload="elementosInicar()">
+
+  <header>
+
+    <div class="cabecalho__lista_dropdown">
+
+      <p class="mais">☰</p>
+
+
+      <ul class="lista__itens_conteudos">
+
+        <li class="lista__itens__cabecalho"><a href="pagina2.html">A Historia do Audiovisual</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina3.html">Trabalhar no Audiovisual brasileiro</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina4.html">A importância dos curtas brasileiros</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina5.html">O impacto de <cite>Ainda Estou Aqui</cite></a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina6.html">Grandes obras do audiovisual brasileiro</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina9.html">Diretores Essenciais</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina7.html">Sobre o projeto</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina8.html">Contato</a></li>
+        <li class="lista__itens__cabecalho"><a href="pagina10.html">Termos de Serviço</a></li>
+
+      </ul>
+
+    </div>
+
+    <p id="pagina__inicial"><a href="paginainicial.html">Página Inicial</a></p>
+
+    <p class="pagina__loginclass" id="pagina__login"></p>
+
+  </header>
+
+<section class="cadastro">
+<h2 class="cadastro__texto__introducao" id="cadastro__texto"></h2>
+
+
+<h3>Informe-nos sobre os seus favoritos:</h3>
+
+<p>Digite aqui suas obras e produtos favoritos. Essas informações serão utilizadas para que você receba notícias personalizadas de acordo com seus interesses.</p>
+
+
+<label for="catalogar__favoritos">Catalogar favoritos</label>
+<input type="text" name="catalogar_favoritos" id="catalogar__favoritos" class="barras__de__input" placeholder="Digite aqui">
+
+
+<input type="submit" value="Enviar" id="butao__catalogo" class="botao__pagina__usuario" onclick="adcionarFavoritos()">
+
+<h3>Receba as últimas novidades por e-mail:</h3>
+
+<p>Assine nossa newsletter para receber dicas e notícias exclusivas diretamente em seu e-mail. Você pode cancelar a qualquer momento.</p>
+<label for="newsletter">Assinar newsletter</label>
+<input type="checkbox" name="newsletter" id="newsletter" onclick="newsletterAtiva()">
+
+
+<h3>Salve as obras brasileiras que você assistiu:</h3>
+<p>Se desejar, você pode registrar as obras brasileiras que já assistiu. Além de manter esse histórico para você, essas informações também nos auxiliarão em pesquisas voltadas a compreender melhor o público.</p>
+
+<label for="obras__salvas">Obras brasileiras assistidas</label>
+<input type="text" name="obras_salvas" id="obras__salvas" class="barras__de__input" placeholder="Digite aqui">
+
+
+<input type="submit" value="Enviar" id="butao__obras" class="botao__pagina__usuario" onclick="adcionarObras()">
+
+<section class="opcoes__externas">
+<h4><a href="pagina16.html">Para ver suas obras</a></h4>
+
+
+<h4><a href="pagina14.html">Ajustes</a></h4>
+
+
+<button type="button" id="sair" class="botao__pagina__usuario" onclick="sairConta()">Sair</button>
+  
+</section>
+
+</section>
+  
+  <footer class="rodepe">
+
+    <ul class="listas__rodape">
+
+      <li class="lista_rodape__itens_especifico"><a href="pagina7.html">Sobre o projeto</a></li>
+
+      <li class="lista_rodape__itens_especifico"><a href="pagina8.html">Contato</a></li>
+
+      <li class="lista_rodape__itens_especifico"><a href="paginainicial.html">Início</a></li>
+
+      <li class="lista_rodape__itens_especifico"><a href="pagina10.html">Termos de Serviço</a></li>
+
+
+    </ul>
+
+
+    <div class="rodape__suplemento">
+
+      <p>© 2025 Todos os direitos reservados, IFCE*</p>
+
+      <p>Esta página é disponibilizada nos termos da licença <a href="#">Creative Commons Atribuição-Compartilha
+          Igual</a></p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

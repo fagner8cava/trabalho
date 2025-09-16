@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="css/style12.css">
+    <script src="javaScript.js" defer></script>
+</head>
+
+<body onload="elementosInicar()">
+
+    <header>
+
+        <div class="cabecalho__lista_dropdown">
+
+            <p class="mais">☰</p>
+
+
+            <ul class="lista__itens_conteudos">
+
+                <li class="lista__itens__cabecalho"><a href="pagina2.html">A Historia do Audiovisual</a></li>
+                <li class="lista__itens__cabecalho"><a href="pagina3.html">Trabalhar no Audiovisual brasileiro</a></li>
+                <li class="lista__itens__cabecalho"><a href="pagina4.html">A importância dos curtas brasileiros</a></li>
+                <li class="lista__itens__cabecalho"><a href="pagina5.html">O impacto de <cite>Ainda Estou
+                            Aqui</cite></a></li>
+                <li class="lista__itens__cabecalho"><a href="pagina6.html">Grandes obras do audiovisual brasileiro</a>
+                </li>
+                <li class="lista__itens__cabecalho"><a href="pagina7.html">Sobre o projeto</a></li>
+                <li class="lista__itens__cabecalho"><a href="pagina8.html">Contato</a></li>
+                <li class="lista__itens__cabecalho"><a href="pagina10.html">Termos de Serviço</a></li>
+
+            </ul>
+
+        </div>
+
+        <p id="pagina__inicial"><a href="paginainicial.html">Página Inicial</a></p>
+
+        <p class="pagina__loginclass" id="pagina__login"></p>
+
+    </header>
+
+    <main class="conteudo__todo" role="main">
+        <section class="area__login" id="area-login">
+            <div class="container">
+                <form id="login__forma" class="forma__login">
+                    <div class="arrow">
+                        <label for="email__login" class="label_texto">Nome*:</label>
+                        <input type="text" name="nome__do__usario" id="nome__usario_cadastro" placeholder="Digite seu Nome" class="barra__login">
+                        <label for="senha__login" class="label_texto">Sobrenome*:</label>
+                        <input type="text" name="sobrenome__do__usario" id="sobrenome__usario_cadastro" placeholder="Digite seu Sobrenome" class="barra__login">
+                        <label for="email__login" class="label_texto">E-mail*:</label>
+                        <input type="email" name="email__cadastro" id="email__cadastro" placeholder="Digite seu E-mail" class="barra__login">
+                        <label for="senha__login" class="label_texto">Senha*:</label>
+                        <input type="password" name="senha__cadastro" id="senha__cadastro" placeholder="Digite sua Senha" class="barra__login">
+                    </div>
+
+                    <section class="textos__links_completo">
+                    
+                        <div class="row">
+                            <input type="checkbox" name="newsletter" id="newsletter">
+                            <label for="newsletter" class="newsletter">
+                                Assine nossa newsletter para receber dicas exclusivas de vídeos, shows e notícias diretamente no seu e-mail. (Opcional)
+                            </label>
+                        </div>
+
+                         <div class="row" id="aceitar">
+                            <input type="checkbox" name="aceitar" id="aceitar__criar">
+                            <label for="aceitar__criar" class="obrigatorio">
+                                Eu li e aceito os termos de serviço.*
+                            </label>
+                        </div>
+                    
+                        <p class="termos-servico"> Ao criar uma conta, você aceita nossos termos de serviço e concorda que seus dados podem ser usados para pesquisas e melhorias em nosso algoritmo. Você pode acessar nossos <a href="pagina10.html">Termos de serviços aqui</a>. </p>
+
+                    
+                       
+                    
+                    </section>
+                    <button type="button" id="botao__login" onclick="criarConta()">Criar</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="rodepe">
+
+        <ul class="listas__rodape">
+
+            <li class="lista_rodape__itens_especifico"><a href="pagina7.html">Sobre o projeto</a></li>
+
+            <li class="lista_rodape__itens_especifico"><a href="pagina8.html">Contato</a></li>
+
+            <li class="lista_rodape__itens_especifico"><a href="paginainicial.html">Início</a></li>
+
+            <li class="lista_rodape__itens_especifico"><a href="pagina10.html">Termos de Serviço</a></li>
+
+        </ul>
+
+
+        <div class="rodape__suplemento">
+
+            <p>© 2025 Todos os direitos reservados, IFCE*</p>
+
+            <p>Esta página é disponibilizada nos termos da licença <a href="#">Creative Commons Atribuição-Compartilha
+                    Igual</a></p>
+
+        </div>
+
+    </footer>
+
+</body>
